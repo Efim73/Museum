@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+}
+header{
+    background-color: white;
+    width: 100%;
+
+}
+.museum{
+    width: 50px;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+}
+.bestH2{
+    display: inline-block;
+    line-height: 60px;
+    vertical-align: middle;
+    
+}
+
+.headerRight:hover nav{
+    transform: translateX(0);
+}
+
+.menu{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 21px;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+.menu:hover~nav{
+    transform: translateX(0%);
+}
+
+nav a{
+    display: block;
+    padding: 5px 10px;
+    font-size: 21px;
+    text-decoration: none;
+    transition: 0.3s;
+
+
+}
+nav a:hover{
+    background-color: rgba(207, 207, 207, 0.37);
+}
+nav{
+
+    position: absolute;
+    transform: translateX(100%);
+    right: 0;
+    background-color: white;
+
+
+}
+nav:hover{
+    transform: translateX(0);
+}
+.pomp{
+    background: url('0.jpeg');
+    width: 100%;
+    display: block;
+    height: 600px;
+
+}
+.info{
+    position: absolute;
+    /* top: 0; */
+}
+.smallImg{
+    width: 400px;
+    height: 400px;
+
+    display: inline-block;
+    border-radius: 5000px;
+}
+form{
+    background-color: rgba(128, 128, 128, 0.493);
+    display: inline-block;
+    width: calc(100% - 460px);
+
+}
