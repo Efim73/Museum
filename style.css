@@ -9,7 +9,16 @@ body{
 header{
     background-color: white;
     width: 100%;
+    /* position: absolute; */
+    position: relative;
 
+    z-index: 2;
+
+}
+h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #222;
 }
 .museum{
     width: 50px;
@@ -31,9 +40,9 @@ header{
 .menu{
     position: absolute;
     right: 10px;
-    top: 5px;
+    top: 0px;
     font-size: 21px;
-    line-height: 60px;
+    line-height: 70px;
     vertical-align: middle;
 }
 
@@ -54,7 +63,7 @@ nav a:hover{
     background-color: rgba(207, 207, 207, 0.37);
 }
 nav{
-
+    z-index: 1;
     position: absolute;
     transform: translateX(100%);
     right: 0;
@@ -66,26 +75,52 @@ nav:hover{
     transform: translateX(0);
 }
 .pomp{
-    background: url('0.jpeg');
+    box-sizing: border-box;
+    padding: 50px;
+    overflow: hidden;
     width: 100%;
     display: block;
-    height: 600px;
+    /* height: 600px; */
+    position: relative;
 
 }
 .info{
-    position: absolute;
+    /* position: absolute; */
     /* top: 0; */
 }
 .smallImg{
+    vertical-align: middle;
+    margin-right: 50px;
     width: 400px;
     height: 400px;
-
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.301);
     display: inline-block;
     border-radius: 5000px;
 }
 form{
-    background-color: rgba(128, 128, 128, 0.493);
+    background-color: rgba(226, 226, 226, 0.781);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
     display: inline-block;
     width: calc(100% - 460px);
+    vertical-align: middle;
+    
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.301);
 
+
+}
+form ul{
+    list-style-position: inside;
+    margin-bottom: 20px;
+}
+.backImg{
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    transform: scale(1.1);
+    object-fit: cover;
 }
