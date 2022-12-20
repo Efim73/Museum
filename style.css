@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0%;
 }
+html{
+    scroll-behavior: smooth;
+}
+img{
+    object-fit: cover;
+}
 body{
     overflow-x: hidden;
     font-family: 'Quicksand', sans-serif;
@@ -9,7 +15,6 @@ body{
 header{
     background-color: white;
     width: 100%;
-    /* position: absolute; */
     position: relative;
 
     z-index: 2;
@@ -56,6 +61,7 @@ nav a{
     font-size: 21px;
     text-decoration: none;
     transition: 0.3s;
+    color: black;
 
 
 }
@@ -63,6 +69,7 @@ nav a:hover{
     background-color: rgba(207, 207, 207, 0.37);
 }
 nav{
+    transition: 0.4s;
     z-index: 1;
     position: absolute;
     transform: translateX(100%);
@@ -82,6 +89,8 @@ nav:hover{
     display: block;
     /* height: 600px; */
     position: relative;
+    margin-bottom: 10px;
+    font-size: 0%;
 
 }
 .info{
@@ -112,7 +121,11 @@ form{
 }
 form ul{
     list-style-position: inside;
+    font-size: 15px;
     margin-bottom: 20px;
+}
+p{
+    font-size: 15px;
 }
 .backImg{
     top: 0;
@@ -124,3 +137,30 @@ form ul{
     transform: scale(1.1);
     object-fit: cover;
 }
+
+.url, .youtube{
+    font-size: 15px;
+    padding: 10px 15px ;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(245,223,96,1) 50%, rgba(103,76,255,1) 100%);
+    display: inline-block;
+    background-size: 500% 100%;
+    transition: 0.5s;
+    margin-right: 10px;
+
+}
+.url:hover, .youtube:hover{
+    background-position: right;
+    background-size: 200% 100%;
+}
+iframe{
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+    height: 300px;
+}
+
+
